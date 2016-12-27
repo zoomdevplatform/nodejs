@@ -1,0 +1,72 @@
+body{
+   overflow-x: hidden;
+}
+.glyphicon.glyphicon-pencil, .glyphicon.glyphicon-remove, .glyphicon.glyphicon-eye-open {
+    font-size: 18px;
+    margin:0 5px;
+}
+
+.bx-wrapper {
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto 30px !important;
+}
+
+.bx-viewport {
+    min-height: 160px;
+    max-height: 160px;
+}
+
+.btn-success {
+    font-weight: 600;
+}
+
+.bx-wrapper .bx-prev {
+  left:-40px !important;
+}
+
+.bx-wrapper .bx-next {
+  right: -32px !important;
+}
+
+legend {
+  margin-bottom: 15px;
+  border-bottom:1px solid #000;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  z-index: 999;
+}
+
+.btn-file > input {
+  position: relative;
+  width: 115px;
+  height: 35px;
+  margin-top: -23px;
+  font-size: 23px;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.sequence-order-div .header{
+  width: 180px;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.sequence-order-div .edit-header{
+  width: 200px;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.header{
+  margin-bottom: 20px !important;
+}

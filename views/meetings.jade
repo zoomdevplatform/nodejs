@@ -1,0 +1,13 @@
+extends layout
+block body
+    .row
+      .col-lg-2#nav-container
+        ul.nav.nav-pills.pull-right
+          li
+            a.cursor.active(href='/meetings') Create Meeting
+          li
+            a.cursor(href='/meetingdelete') Delete Meeting
+          li
+            a.cursor(href='/meetingupdate') Update Meeting
+          li
+            a.cursor(href='/meetinglist') List My Meetings

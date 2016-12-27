@@ -1,0 +1,60 @@
+html
+  head
+    title=title
+    link(
+      href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css',
+      rel='stylesheet'
+    )
+  body
+    div.container
+
+      div.page-header
+        h1 Add Users
+
+      if errors
+        each error in errors
+          div.alert.alert-danger
+            span #{error.error}
+      if saved
+        div.alert.alert-success
+          span Your profile has been saved
+      form.login-form.form-horizontal(method='post', role='form')
+        input(name='_csrf', type='hidden', value=csrfToken)
+        div.form-group
+          label.col-sm-4 E-mail Address
+          div.col-sm-8
+            input.form-control(
+              placeholder='Your email',
+              required=true,
+              name='email',
+              type='text',
+              value=email)
+        div.form-group
+          label.col-sm-4 First Name
+          div.col-sm-8
+            input.form-control(placeholder='Your first name',
+              required=true,
+              name='firstname',
+              type='text',
+              value=firstname)
+        div.form-group
+          label.col-sm-4 Last Name
+          div.col-sm-8
+            input.form-control(placeholder='Your last name',
+              required=true,
+              name='lastname',
+              type='text',
+              value=lastname)
+        div.form-group
+          label.col-sm-4 Password
+          div.col-sm-8
+            input.form-control(placeholder='Password',
+              required=true,
+              name='password',
+              type='password',
+              value=password)
+        div.form-group
+          div.col-sm-offset-4.col-sm-8
+            button.login.btn.btn-primary(type='submit') Save
+        div.pull-right
+          a(href="/") Return to home page

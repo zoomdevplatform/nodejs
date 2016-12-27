@@ -1,0 +1,26 @@
+extends layout
+block body
+  div
+    #nav-container.col-lg-2
+     include leftnavigation.jade
+    #data-container.col-lg-30
+      .well-nm
+        .adduser.well-nm
+          form.bs-example.form-horizontal(method='post', action='')
+            fieldset
+              legend  Create a Zoom User Account
+              .form-group
+                label.col-lg-1.control-label(for='email') Email
+                .col-lg-18
+                  input#xxx.form-control(name='email', type='e-mail', value=email)
+              .form-group
+                label.col-lg-1.control-label(for='fname') First name
+                .col-lg-18
+                  input#xxx.form-control(name='fname', type='text', value=fname)
+              .form-group
+                label.col-lg-1.control-label(for='lname') Last name
+                .col-lg-18
+                  input#xxx.form-control(name='lname', type='text', value=lname)
+              .form-group
+                .col-lg-10.col-lg-offset-4
+                  input.btn.btn-success(type='submit', value='Submit')
